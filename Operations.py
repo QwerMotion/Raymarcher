@@ -1,4 +1,5 @@
 from vector import Vec
+import math
 
 
 def vecMul(v, t):
@@ -56,3 +57,9 @@ returns a vector that is v1 + v2
 
     vnew = Vec(newx, newy, newz, newName)
     return vnew
+
+def vecTimesVec(v1, v2):
+    return (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z)
+
+def skalar(v1, v2):
+    return vecTimesVec(v1, v2) * (1 / (v1.getLength() * v2.getLength()))

@@ -4,6 +4,8 @@ class Vec:
         self.y = y
         self.z = z
         self.name = name
+        self.xID = None
+        self.yID = None
 
 
     def setPos(self, x, y, z):
@@ -18,9 +20,11 @@ class Vec:
         print("----------------------")
         print("Vectorname: ", self.name)
         print("Vectorlength: ", self.getLength())
-        print("|x:", self.x, "|")
-        print("|y:", self.y, "|")
-        print("|z:", self.z, "|")
+        print("|x:  ", self.x, "|")
+        print("|y:  ", self.y, "|")
+        print("|z:  ", self.z, "|")
+        print("|xID:", self.xID, "|")
+        print("|zID:", self.yID, "|")
         print("----------------------")
 
     def getLength(self):
